@@ -1,0 +1,3 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_library_book_manager,library_book_manager,model_library.book,,1,1,1,1
+access___init___py_manager,__init___py_manager,model___init___py,,1,1,1,1
