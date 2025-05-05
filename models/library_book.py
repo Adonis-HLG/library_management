@@ -1,15 +1,9 @@
-# -*- coding: utf-8 -*-
-import logging
-
-from odoo import models, fields, api, _
-from odoo.exceptions import UserError, ValidationError
-
-_logger = logging.getLogger(__name__)
-
+from odoo import models, fields
 
 class LibraryBook(models.Model):
-    _name = 'library.book'
-    _description = 'LibraryBook'
+   _name = 'library.book'
 
-    name = fields.Char('Nombre del libro')
-    
+   name = fields.Char(string="Nombre del libro")
+   isbn = fields.Char(string="ISBN")
+   autor = fields.Char(string="Autor")
+   fecha = fields.Date(string="Fecha de publicación")

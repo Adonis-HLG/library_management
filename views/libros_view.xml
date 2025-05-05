@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="library_book_form_view" model="ir.ui.view">
+        <field name="name">library.book.form.view</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <form string="Libro">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" placeholder="Introduzca el nombre del libro"/>
+                            <field name="isbn" placeholder="Introduzca el ISBN"/>
+                            <field name="autor" placeholder="Introduzca el nombre del autor"/>
+                            <field name="fecha" placeholder="Introduzca la fecha de publicación"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>        
+        </field>
+    </record>
+</odoo>
