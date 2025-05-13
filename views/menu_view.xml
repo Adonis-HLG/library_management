@@ -6,7 +6,14 @@
         <field name="res_model">library.book</field>
         <field name="view_mode">tree,form</field>
     </record>
-
+    
+    <record id="prestamos_action" model="ir.actions.act_window">
+        <field name="name">Prestamos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">library.loan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
     <menuitem name="Mi Libreria" id="library_menu"/>
     <menuitem name="Libros" id="libros_menu" parent="library_menu" action="libros_action"/>
+    <menuitem name="Prestamos" id="prestamos_menu" parent="library_menu" action="prestamos_action"/> 
 </odoo>    

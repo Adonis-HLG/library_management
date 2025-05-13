@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_partner_view_form_inherit_library_loan" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.library.loan</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>  
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <div class="oe_button_box" name="button_box_library_loan">
+                    <button name="action_view_library_loan" type="object" class="oe_stat_button" icon="fa-book">
+                        <span class="o_stat_value">
+                            <field name="library_loan_count" widget="statinfo"/>
+                        </span>
+                        <span class="o_stat_text">Texto del botón</span>
+                    </button>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

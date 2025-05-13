@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_library_book_user,Acceso a library_book,model_library_book,library_group_user,1,1,1,1
+access_library_loan_user,Acceso a library_loan,model_library_loan,library_group_user,1,1,1,1
