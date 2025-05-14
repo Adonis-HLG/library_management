@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="res_partner_view_form_inherit_library_loan" model="ir.ui.view">
-        <field name="name">res.partner.form.inherit.library.loan</field>
+    <record id="res_partner_view_form" model="ir.ui.view">
+        <field name="name">res.partner.form.library.loan</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>  
         <field name="arch" type="xml">
@@ -11,7 +11,7 @@
                         <span class="o_stat_value">
                             <field name="library_loan_count" widget="statinfo"/>
                         </span>
-                        <span class="o_stat_text">Texto del botón</span>
+                        <span class="o_stat_text"></span>
                     </button>
                 </div>
             </xpath>

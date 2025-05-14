@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <tree string="Prestamos">
                 <field name="name"/>
-                <field name="res_parner_id"/> 
+                <field name="res_partner_id"/> 
                 <field name="loan_date"/>   
                 <field name="return_date"/> 
                 <field name="estado"/>

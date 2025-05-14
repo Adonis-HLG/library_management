@@ -3,9 +3,8 @@ from odoo import models, fields, api, _
 class ResPartner(models.Model):
     _inherit = 'res.partner'
     
-    library_loan_count = fields.Integer(compute='_compute_library_loan_count', string="Library Loan Count")
+    library_loan_count = fields.Integer(compute='_compute_library_loan_count', string='Libro(s)')
 
-    @api.depends('library_loan_ids') 
     def _compute_library_loan_count(self):
         loan_model = self.env['library.loan']
         for partner in self:

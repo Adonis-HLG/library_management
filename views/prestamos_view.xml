@@ -13,7 +13,7 @@
                     <group>
                         <group>
                             <field name="name" placeholder="Introduzca el libro"/>
-                            <field name="res_parner_id" placeholder="Introduzca el nombre"/>
+                            <field name="res_partner_id" placeholder="Introduzca el nombre"/>
                             <field name="loan_date" placeholder="Introduzca fecha"/>
                             <field name="return_date" placeholder="Introduzca fecha"/>
                             <field name="estado"/>
